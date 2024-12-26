@@ -111,7 +111,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        base_layer {
             display-name = "BASE";
             bindings = <
                       &kp W        &kp E         &kp R         &kp T           &kp Y                  &kp U         &kp I         &kp O
@@ -135,7 +135,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        num_layer {
+        number_layer {
             display-name = "NUMBER";
             bindings = <
                         &kp LG(W)        &kp LG(LS(LBKT))  &kp LG(LS(RBKT))  &none           &kp STAR                 &kp N1    &kp N2  &kp N3
@@ -147,7 +147,7 @@
             sensor-bindings = <&inc_dec_kp LC(R) U>;
         };
 
-        sym_layer {
+        symbol_layer {
             display-name = "SYMBOL";
             bindings = <
                       &kp AMPS           &kp UP            &kp PIPE   &none        &none           &kp EXCL        &kp AT          &kp HASH
@@ -159,8 +159,8 @@
             sensor-bindings = <&inc_dec_kp PG_DN PG_UP>;
         };
 
-        fun_layer {
-            display-name = "FUNCTION";
+        function_layer {
+            display-name = "FUNC";
             bindings = <
                         &kp F10       &kp F11       &kp F12       &none           &none              &kp F1       &kp F2  &kp F3
 &kp CAPS  &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT     &kp RCTRL       &ext_power EP_ON   &kp F4       &kp F5  &kp F6  &out OUT_BLE  &bt BT_CLR
